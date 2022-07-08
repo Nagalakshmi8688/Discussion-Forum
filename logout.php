@@ -1,0 +1,7 @@
+<?php
+	
+	unset($_SESSION['role']);
+	unset($_SESSION['IS_LOGIN']);
+	header("location:login.php");
+	die();
+?>

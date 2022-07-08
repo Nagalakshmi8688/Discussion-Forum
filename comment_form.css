@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+body{
+    padding:0;
+    margin:0;
+    background: whitesmoke;
+    
+}
+
+
+.banner{
+   display: block;
+   position: fixed;
+   -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ 
+    width:100%;
+    z-index: 1000;
+    left:0px;
+    top:0;
+}
+
+img{
+    width:100%;
+    height:220px;
+    position:absolute;
+}
+.overlay{
+    width:100%;
+    height:220px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    top:0;
+   
+}
+.navbar{
+    width:20%;
+    display:flex;
+}
+.logo{
+    flex-basis:15%;
+}
+.logo img{
+    left:0px;
+    width:65%;
+    height:110px;
+}
+.content{
+    width:100%;
+    margin:20px auto 0;
+    text-align:center;
+    color:#fff;
+    position: relative;
+    animation-name: project;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
+}
+@keyframes project{
+    from {top:0px;}
+    to {top:30px; }
+}
+.content h1{
+    font-size: 30px;
+}
+.content h3{
+    width:100%;
+    margin: 25px auto 100px;
+    font-weight:100;
+    line-height:15px;
+    font-size:20px;
+  
+}
+
+@media screen and  (max-width: 501px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+         margin-top:25px;
+         width:80px;
+         height:75px;
+         margin-left:5px;
+     }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:20px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:15px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:47%;
+          left:-250px;
+       }
+       .button{
+           position:relative;
+           height:10px;
+       }
+       
+       
+   }
+   .button{
+       position:absolute;
+       top:220px;
+       height:40px;
+       width:40px;
+       background: #000000;
+       left:25px;
+       text-align:center;
+       border-radius:3px;
+       cursor:pointer;
+       transition:left 0.4s ease;
+       
+   }
+   
+   .button span{
+       color:white;
+       font-size:28px;
+       line-height:40px;
+   
+   }
+   .button.click{
+       left:250px;
+      margin-top:-8px;
+   }
+   .button.click span:before{
+       content: '\f00d';
+   }
+   .sidebar{
+       position:fixed;
+       margin-top: 33.2%;
+       width: 250px;
+       height: 80%;
+       background: #1b1b1b;
+       transition: left 0.4s ease;
+       -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%); 
+     
+    
+       
+     }
+     .sidebar.show{
+         left:0px;
+     }
+  .sidebar .name{
+      color:white;
+     height:20px;
+     width:100%;
+     
+    
+
+  }
+  .sidebar .name img{
+      height:110px;
+      width:90px;
+      margin-top:-15px;
+  }
+  .sidebar h3{
+    color:white;
+   height:20px;
+   width:70%;
+   margin-left:100px;
+   font-size:20px;
+  margin-top:-10px;
+}
+.sidebar p{
+    margin-left:100px;
+    margin-top:30px;
+    color:whitesmoke;
+}
+  nav ul{
+      margin-top:100px;
+   position: relative;
+   list-style-type: none;
+  
+   
+  }
+  nav ul li{
+    line-height: 70px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  nav ul li:last-child{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  nav ul li a{
+   display:flex;
+   align-items:center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    width: 100%;
+    border-left: 2px solid transparent;
+    transition:.5s easy;
+  
+   
+  }
+  nav ul li.active a{
+    color: cyan;
+    background: #181414;
+    border-left-color: cyan;
+  }
+  nav ul li a:hover{
+    background: #222121;
+  }
+  nav ul ul{
+      position: absolute;
+      left:250px;
+      width:200px;
+      top:-100px;
+      height:220px;
+      display:none;
+      background:#181414;
+      
+  }
+ 
+  nav ul ul li a{
+    font-size: 17px;
+     color: #e6e6e6;;
+    padding-left: 50px;
+  }
+  nav ul li.active ul li a{
+    color: #e6e6e6;
+    background: #1b1b1b;
+  
+    
+  }
+  nav ul ul li a:hover{
+    color: cyan!important;
+    background: #1e1e1e!important;
+  }
+  nav ul ul li{
+    
+    line-height: 45px;
+    border-top: none;
+    border-bottom: none;
+    
+  }
+  nav ul li a span{
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    
+  }
+  nav ul .active{
+      position:relative;
+  }
+  nav ul .active:hover > ul{
+      display: initial;
+  }
+  nav ul .active_1 ul{
+    position:absolute;
+    left:200px;
+    top:-100px;
+    width:250px;
+  
+   
+
+}
+nav ul .active_1:hover ul{
+    display: initial;
+}
+  
+
+
+.wrap{
+   
+  position:absolute;
+  width:60%;
+  margin-top:18.5%;
+  left:20%; 
+  
+}
+ 
+ 
+.com h1{
+	margin-left:350px;
+	margin-top:1%;
+	
+}	
+.wrapper {
+    padding: 40px;
+   border: 3px solid gray;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 550px;
+    min-height: 500px;
+   margin-left:150px;
+   
+}
+.wrapper form  .input-group {
+    width:100%;
+    height: 60px;
+  
+}
+
+.wrapper form  .input-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+	font-family:'Poppins', sans-serif;
+	
+}
+
+.wrapper form .input-group input, .wrapper form .input-group textarea {
+	width:100%;
+	height:70%;
+	border:1px solid #00b894;
+	outline:none;
+	padding:5px 10px;
+	 line-height:40px;
+	 
+}
+
+.wrapper form .input-group.textarea {
+    height: 250px;
+}
+.wrapper form .input-group.textarea textarea {
+    resize: none;
+}
+.wrapper form .input-group-btn{
+	margin-top:-30px;
+	 cursor:pointer;
+	 
+   
+}
+.wrapper form .input-group-btn input{
+	font-size: 16px;
+	 transition: .3s ease-in;
+	 background:#464832;
+	 color:white;
+	 border-radius:5px;
+	 width:130px;
+	 height:40px;
+}
+
+.wrapper form .input-group-btn input:hover {
+    opacity: 1;
+	
+}
+marquee{
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+    
+    margin-left: 1260px;
+    margin-top: 30.9%;
+    width:270px;
+    height:497px;
+    border-left: 2px solid;
+    background: white;
+}
+.thicker-up h3{
+    font-size:20px;
+    line-height: 40px;
+    min-width: 50%;
+    color:red;
+    margin-left: 20px;
+}
+
+
+
+  
+.wrap{
+   
+  position:absolute;
+  width:60%;
+  margin-top:12.5%;
+  left:20%; 
+  
+}
+ 
+ 
+.com h1{
+	margin-left:350px;
+	margin-top:1%;
+	
+}	
+.wrapper {
+    padding: 40px;
+   border: 3px solid gray;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    width: 550px;
+    min-height: 500px;
+   margin-left:150px;
+   
+}
+
+
+.wrapper form  .input-group label  {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+	font-family:'Poppins', sans-serif;
+	
+}
+
+.wrapper form .input-group input, .wrapper form .input-group textarea {
+	width:100%;
+	height:70%;
+	border:1px solid #00b894;
+	outline:none;
+	padding:5px 10px;
+	 line-height:40px;
+	 
+}
+
+.wrapper form .input-group.textarea {
+    height: 250px;
+}
+.wrapper form .input-group.textarea textarea {
+    resize: none;
+}
+.wrapper form .input-group-btn{
+	margin-top:-30px;
+	 cursor:pointer;
+	 
+   
+}
+.wrapper form .input-group-btn input{
+	font-size: 16px;
+	 transition: .3s ease-in;
+	 background:#464832;
+	 color:white;
+	 border-radius:5px;
+	 width:130px;
+	 height:40px;
+}
+
+.wrapper form .input-group-btn input:hover {
+    opacity: 1;
+	
+}
+marquee{
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+    
+    margin-left: 1260px;
+    margin-top: 30.9%;
+    width:270px;
+    height:497px;
+    border-left: 2px solid;
+    background: white;
+}
+.thicker-up h3{
+    font-size:20px;
+    line-height: 40px;
+    min-width: 50%;
+    color:red;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+/*.wrapper form .row1 .input-group-btn {
+     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+ padding: .7rem 1rem;
+    
+}*/
+
+
+
+ 
+
+
+/*.wrapper form .row1 .input-group-btn {
+     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+ padding: .7rem 1rem;
+    
+}*/
+

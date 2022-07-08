@@ -1,0 +1,1472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+    
+}
+
+body{
+  padding:0;
+  margin:0;
+  background: whitesmoke;
+  
+}
+.banner{
+   display: block;
+   position: fixed;
+   -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+ 
+    width:100%;
+    z-index: 1000;
+    left:0px;
+    top:0;
+}
+
+img{
+    width:100%;
+    height:220px;
+    position:absolute;
+}
+.overlay{
+    width:100%;
+    height:220px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    position: absolute;
+    top:0;
+   
+}
+.navbar{
+    width:100%;
+    display:flex;
+}
+.logo{
+    flex-basis:15%;
+}
+.logo img{
+    left:0px;
+    width:15%;
+    height:110px;
+}
+
+.content{
+  width:100%;
+  margin:20px auto 0;
+  text-align:center;
+  color:#fff;
+  position: relative;
+  animation-name: project;
+  animation-duration: 1s;  
+  animation-fill-mode: forwards;
+}
+@keyframes project{
+  from {top:0px;}
+  to {top:30px; }
+}
+.content h1{
+  font-size: 30px;
+}
+.content h3{
+  width:100%;
+  margin: 25px auto 100px;
+  font-weight:100;
+  line-height:15px;
+  font-size:20px;
+
+}
+
+@media screen and  (max-width: 501px)  {
+ .wrapper {
+  
+   width:100%;
+   top:28%;
+   margin-left:-40px;
+
+  }
+  
+  .logo img{
+    margin-top:12px;
+    width:130px;
+    height:75px;
+    margin-left:5px;
+}
+  .content h1 {
+    width: 100%;
+    height: 15px;
+    font-size:20px;
+    margin-top:70px;
+   
+    }
+    .content h3 {
+        width: 100%;
+        height: 5px;
+        font-size:15px;
+        
+    }
+    .banner{
+        height:5%;
+    }
+    .sidebar{
+       margin-top:59%;
+       left:-250px;
+       z-index:100;
+       position:relative;
+    }
+    .button{
+        position:relative;
+        height:10px;
+    }
+	.button.click{
+    margin-left:40px;
+   top:250px;
+}
+    .wrap{
+        
+       top:26.5%;
+       margin-left:-200px;
+       
+    }
+    .comments{
+        z-index:1;
+        left:-100px;
+        width:150%;
+       
+        top:20px;
+    }
+    
+   .single_comment {
+      width:150%;
+     
+   }
+   .single_comment .com2{
+       margin-left:170px !important;
+   }
+ .wrap .text form{
+    width:400px;
+    border:2px solid gray;
+    padding:15px;
+    margin-left:10px;
+    border-radius:5px;
+    }
+.wrap .text form .input-group textarea {
+	width:90%;
+	height:70%;
+	border:1px solid #00b894;
+	outline:none;
+	padding:5px 5px;
+	 line-height:20px;
+   margin-left:5px;
+	 background:white;
+}
+    .wrap .text form .input-group textarea {
+        height: 220px;
+        width:350px;
+    }
+.wrap .text form .row .input-group:last-child {
+   margin-top:10px;
+}
+.wrap .comments .comments_reply{
+   
+    line-height: 28px;
+   
+
+}
+.wrap .comments .comments_reply .single_comment1{
+    width:190%;
+    margin-left:-20px;
+    margin-top:-10px;
+   line-height:20px;
+}
+.wrap .comments .comments_reply .single_comment1 .com4{
+   
+    margin-left:80px !important;
+    
+}
+
+}
+
+
+
+.button{
+    position:absolute;
+    top:270px;
+    height:40px;
+    width:40px;
+    background: #000000;
+    left:25px;
+    text-align:center;
+    border-radius:3px;
+    cursor:pointer;
+    transition:left 0.4s ease;
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index:10;
+    
+}
+
+.button span{
+    color:white;
+    font-size:28px;
+    line-height:40px;
+
+}
+.button.click{
+    left:210px;
+   margin-top:-8px;
+}
+.button.click span:before{
+    content: '\f00d';
+}
+.sidebar{
+    position:fixed;
+    margin-top: 33%;
+    width: 250px;
+    height: 80%;
+    background: #1b1b1b;
+    transition: left 0.4s ease;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+ z-index:20;
+ 
+    
+  }
+  .sidebar.show{
+      left:0px;
+  }
+  .sidebar .name{
+      color:white;
+     height:20px;
+     width:100%;
+    
+
+  }
+  .sidebar .name img{
+      height:110px;
+      width:90px;
+      margin-top:-15px;
+  }
+  .sidebar h3{
+    color:white;
+   height:20px;
+   width:60%;
+   margin-left:100px;
+   font-size:20px;
+  margin-top:-10px;
+}
+.sidebar p{
+    margin-left:100px;
+    margin-top:30px;
+    color:whitesmoke;
+}
+  nav ul{
+      margin-top:100px;
+   position: relative;
+   list-style-type: none;
+  }
+  nav ul li{
+    line-height: 70px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  nav ul li a{
+   display:flex;
+   align-items:center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    width: 100%;
+    border-left: 2px solid transparent;
+    transition:.5s easy;
+  }
+  nav ul li.active a{
+    color: cyan;
+    background: #181414;
+    border-left-color: cyan;
+  }
+  nav ul li a:hover{
+    background: #222121;
+  }
+  nav ul ul{
+      position: absolute;
+      left:250px;
+      width:200px;
+      top:0px;
+      height:220px;
+      display:none;
+      background:#181414;
+      
+  }
+ 
+  nav ul ul li a{
+    font-size: 17px;
+     color: #e6e6e6;;
+    padding-left: 50px;
+  }
+  nav ul li.active ul li a{
+    color: #e6e6e6;
+    background: #1b1b1b;
+    
+  }
+  nav ul ul li a:hover{
+    color: cyan!important;
+    background: #1e1e1e!important;
+  }
+  nav ul ul li{
+    line-height: 45px;
+    border-top: none;
+    border-bottom: none;
+  }
+  nav ul li a span{
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    
+  }
+  nav ul .active{
+      position:relative;
+  }
+  nav ul .active:hover > ul{
+      display: initial;
+  }
+  nav ul .active_1 ul{
+    position:absolute;
+    left:200px;
+    top:0;
+    width:250px;
+   
+
+}
+nav ul .active_1:hover ul{
+    display: initial;
+}
+.wrapper{
+   
+    position:absolute;
+    width:60%;
+    margin-top:16.5%;
+    left:20%; 
+    background:white;
+    
+}
+  
+marquee{
+    position: fixed;
+    -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+    
+    margin-left: 1260px;
+    margin-top: 30.9%;
+    width:270px;
+    height:497px;
+    border-left: 2px solid;
+    background: white;
+}
+.thicker-up h3{
+    font-size:20px;
+    line-height: 40px;
+    min-width: 50%;
+    color:red;
+    margin-left: 20px;
+}
+
+
+
+
+.wrap{
+   
+    position:absolute;
+    width:60%;
+    margin-top:13.5%;
+    left:250px; 
+    
+}
+.text form{
+width:850px;
+border:2px solid gray;
+padding:15px;
+margin-left:10px;
+border-radius:5px;
+}
+
+
+.text form  .input-group label {
+    font-weight: 550;
+    margin-bottom: 5px;
+    font-size:14px;
+	font-family:'Poppins', sans-serif;
+  margin-left:8px;
+	
+}
+
+.text .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
+}
+.text form .input-group input, .text form .input-group textarea {
+	width:90%;
+	height:70%;
+	border:1px solid #00b894;
+	outline:none;
+	padding:5px 5px;
+	 line-height:40px;
+   margin-left:5px;
+	 background:white;
+}
+
+.text form .input-group textarea {
+    height: 220px;
+    width:800px;
+}
+.text form .input-group.textarea textarea {
+    resize: none;
+}
+
+.text form .row .input-group {
+    padding: 0 10px;
+  display:block;
+  
+}
+
+.text form .row .input-group:first-child {
+    padding-left: 10px;
+}
+
+.text form .row .input-group:last-child {
+    padding-right: 0;
+}
+
+.text form .input-group-btn{
+  
+	 padding: .7rem 2rem;
+	 cursor: pointer;
+   
+}
+.text form .input-group-btn input{
+	font-size: 16px;
+	 transition: .3s ease-in;
+	 background:#464832;
+	 color:white;
+	 border-radius:5px;
+	 width:130px;
+	 height:30px;
+ 
+}
+
+.text form .input-group-btn input:hover {
+    opacity: 1;
+}
+
+
+
+.text form .input-group-btn input:hover {
+    opacity: 1;
+}
+
+  
+.text form .input-group-btn input{
+font-size: 16px;
+	 transition: .3s ease-in;
+background:#464832;
+	 color:white;
+	 border-radius:5px;
+	 width:70px;
+	 height:30px;
+ 
+}
+
+
+.comments{
+    margin-top:20px;
+    margin-left:80px;
+    line-height:15px;
+    position: absolute;
+    list-style-type: none;
+    width:95%;
+   
+   
+}
+.comments .single_comment{
+border:1px solid blue;
+border-radius:0px 20PX 0PX 40PX;
+box-shadow: 5px 6px 6px 2px #e9ecef;
+background:white;
+padding:10px;
+font-weight: bold;
+
+}
+.comments .single_comment .com1{
+   padding:0px 5px;
+   font-weight: 200;
+   line-height: 28px;
+   
+}
+.comments .single_comment .com2{
+   
+    margin-left:620px;
+    
+}
+.comments  .replyy  input{
+    background:#464832;  
+    color:white;
+	 border-radius:5px; 
+     cursor:pointer;
+     position: absolute;
+	 height:30px;
+     margin-left:40px;
+    
+   
+}
+.comments  .replyy i{
+    position:absolute;
+    display:inline-block;
+    
+   margin-left:20px;
+
+}
+
+
+.comments .comments_reply{
+  list-style-type: none;
+    margin-left:80px;
+    line-height: 13px;
+   
+
+}
+
+.comments .comments_reply .single_comment1{
+    border:1.5px solid rgb(240, 116, 209);
+    border-radius:0px 20PX 0PX 40PX;
+box-shadow: 5px 6px 6px 2px #e9ecef;
+background:white;
+padding:10px;
+font-weight: bold;
+
+}
+.comments .comments_reply .single_comment1 .com3{
+    line-height:28px;
+    padding:0px 5px;
+    font-weight: 150;
+}
+.comments .comments_reply .single_comment1 .com4{
+   
+    margin-left:570px;
+    
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 630px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:130px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:20px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:15px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:45%;
+          left:-250px;
+          z-index:100;
+       }
+      
+.button{
+  
+    top:250px;
+    height:40px;
+   
+    
+}
+.button.click{
+    left:250px;
+   margin-top:-8px;
+}
+       .wrap{
+           
+          top:26.5%;
+          margin-left:-200px;
+          
+       }
+       .comments{
+         
+           left:-100px;
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:150%;
+        
+      }
+      .single_comment .com2{
+          margin-left:290px !important;
+      }
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:180%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+   .wrap .comments .comments_reply .single_comment1 .com4{
+      
+       margin-left:250px !important;
+       
+   }
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+
+
+   
+@media screen and (min-width: 630px) and (max-width: 730px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:150px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:27px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:20px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:41%;
+          left:-250px;
+          z-index:100;
+       }
+      
+.button{
+  
+    top:250px;
+    height:40px;
+   
+    
+}
+.button.click{
+    margin-left:40px;
+   top:250px;
+}
+       .wrap{
+           
+          top:26.5%;
+          margin-left:-200px;
+          
+       }
+       .comments{
+         
+           left:-100px;
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:155%;
+        
+      }
+      .single_comment .com2{
+          margin-left:390px !important;
+      }
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:179%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+   .wrap .comments .comments_reply .single_comment1 .com4{
+      
+       margin-left:350px !important;
+       
+   }
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+
+  
+   @media screen and (min-width: 730px) and (max-width: 830px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:150px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:27px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:20px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:41%;
+          left:-250px;
+          z-index:100;
+       }
+      
+.button{
+  
+    top:250px;
+    height:40px;
+   
+    
+}
+.button.click{
+    margin-left:40px;
+   top:250px;
+}
+       .wrap{
+           
+          top:26.5%;
+          margin-left:-200px;
+          
+       }
+       .comments{
+         
+           left:-100px;
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:155%;
+        
+      }
+      .single_comment .com2{
+          margin-left:500px !important;
+      }
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:173%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+   .wrap .comments .comments_reply .single_comment1 .com4{
+      
+       margin-left:450px !important;
+       
+   }
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+
+
+   
+   @media screen and (min-width: 830px) and (max-width: 1000px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:150px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:27px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:20px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:30%;
+          left:-250px;
+          z-index:100;
+       }
+      
+.button{
+  
+    top:250px;
+    height:40px;
+   
+    
+}
+.button.click{
+   margin-left:40px;
+   top:250px;
+}
+       .wrap{
+           
+          top:26.5%;
+          margin-left:-200px;
+          
+       }
+       .comments{
+         
+           left:-100px;
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:155%;
+        
+      }
+    
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:173%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+ 
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+
+   @media screen and (min-width: 1000px) and (max-width: 1250px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:150px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:27px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:20px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+          top:15%;
+         
+          z-index:100;
+       }
+      
+
+       .wrap{
+           
+          top:17.5%;
+          margin-left:-20px;
+          width:45%;
+          
+       }
+       .comments{
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:155%;
+        
+      }
+     
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:173%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+   
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+
+   @media screen and (min-width: 1250px) and (max-width: 1350px)  {
+    .wrapper {
+     
+      width:100%;
+      top:28%;
+      margin-left:-40px;
+   
+     }
+     
+     .logo img{
+       margin-top:12px;
+       width:150px;
+       height:75px;
+       margin-left:5px;
+   }
+     .content h1 {
+       width: 100%;
+       height: 15px;
+       font-size:27px;
+       margin-top:70px;
+      
+       }
+       .content h3 {
+           width: 100%;
+           height: 5px;
+           font-size:20px;
+           
+       }
+       .banner{
+           height:5%;
+       }
+       .sidebar{
+		   
+          top:10%;
+         
+          z-index:100;
+	   
+       }
+      
+
+       .wrap{
+           
+          top:17.5%;
+          margin-left:-20px;
+          width:45%;
+          
+       }
+       .comments{
+           width:100%;
+          
+           top:20px;
+       }
+       
+      .single_comment {
+         width:155%;
+        
+      }
+     
+    .wrap .text form{
+       width:450px;
+       border:2px solid gray;
+       padding:15px;
+       margin-left:40px;
+       border-radius:5px;
+       margin-bottom:20px;
+       }
+   .wrap .text form .input-group textarea {
+       width:90%;
+       height:70%;
+       border:1px solid #00b894;
+       outline:none;
+       padding:5px 5px;
+        line-height:20px;
+      margin-left:5px;
+        background:white;
+   }
+       .wrap .text form .input-group textarea {
+           height: 220px;
+           width:350px;
+       }
+   
+    
+   .wrap .text form .row .input-group:last-child {
+      margin-top:10px;
+   }
+   
+.wrap .comments .comments_reply{
+   
+      line-height: 28px;
+     
+  
+  }
+   .wrap .comments .comments_reply .single_comment1{
+       width:173%;
+       margin-left:-20px;
+       margin-top:-20px;
+      line-height:13px;
+   }
+   
+  .wrap .comments .comments_reply .single_comment1 .com3{
+    line-height:25px;
+   }
+   }
+ @media screen and (max-width: 350px){
+	 .sidebar{
+          top:55%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+  @media screen and (min-width: 350px) and (max-width: 400px)  {
+	 .sidebar{
+          top:52%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 400px) and (max-width: 450px)  {
+	 .sidebar{
+          top:52%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 450px) and (max-width:480px)  {
+	 .sidebar{
+          margin-top:105%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 480px) and (max-width:500px)  {
+	 .sidebar{
+          margin-top:105%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 501px) and (max-width: 550px)  {
+	 .sidebar{
+          top:45%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 601px) and (max-width: 650px)  {
+	 .sidebar{
+          top:40%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 660px) and (max-width: 700px)  {
+	 .sidebar{
+          top:37%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 700px) and (max-width: 750px)  {
+	 .sidebar{
+          top:36%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 750px) and (max-width: 800px)  {
+	 .sidebar{
+          top:34%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 800px) and (max-width: 850px)  {
+	 .sidebar{
+          top:31%;
+         
+          z-index:100;
+       }
+ }
+@media screen and (min-width: 850px) and (max-width: 900px)  {
+	 .sidebar{
+          top:25%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 900px) and (max-width: 950px)  {
+	 .sidebar{
+        top:27%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 951px) and (max-width: 1000px)  {
+	 .sidebar{
+          top:25%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1001px) and (max-width: 1020px)  {
+	 .sidebar{
+          top:22%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1021px) and (max-width: 1060px)  {
+	 .sidebar{
+          top:20%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1061px) and (max-width: 1100px)  {
+	 .sidebar{
+          top:19%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1100px) and (max-width: 1150px)  {
+	 .sidebar{
+          top:17%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1200px) and (max-width: 1250px)  {
+	 .sidebar{
+          top:12%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1250px) and (max-width: 1300px)  {
+	 .sidebar{
+          top:8%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1300px) and (max-width: 1400px)  {
+	 .sidebar{
+          top:6%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+ @media screen and (min-width: 1400px) and (max-width: 1500px)  {
+	 .sidebar{
+          top:2%;
+         
+          z-index:100;
+       }
+	 
+	 
+ }
+/*.wrapper form .row1 .input-group-btn {
+     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+ padding: .7rem 1rem;
+    
+}*/
+
+
+
+   
+
+/*.wrapper form .row1 .input-group-btn {
+     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+ padding: .7rem 1rem;
+    
+}*/
+
+
+/*.wrapper form .row1 .input-group-btn {
+     display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+ padding: .7rem 1rem;
+    
+}*/
+
+
+
+   
